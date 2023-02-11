@@ -1,0 +1,24 @@
+.section {
+  padding-top: 50px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 100px;
+  }
+}
+
+.section-no-padding {
+  padding-top: 0;
+}
+
+.hero-bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(79, 103, 115, 0.5),
+      rgba(79, 103, 115, 0.5)
+    ),
+    url(../images/pets.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+}

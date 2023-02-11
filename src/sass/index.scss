@@ -1,0 +1,28 @@
+// Base styles
+@import './base/reset';
+@import './base/color-scheme';
+@import './base/body';
+
+//Conponents
+@import './components/section';
+@import './components/container';
+@import './components/social';
+@import './components/logo';
+@import './components/btn';
+@import './components/section-title';
+
+// Utils
+@import './utils/animate';
+
+// Layout
+@import './layouts/header';
+@import './layouts/mobile-menu';
+@import './layouts/hero';
+@import './layouts/privileg';
+@import './layouts/category';
+@import './layouts/about';
+@import './layouts/questions';
+@import './layouts/footer';
+
+// Category Dog pege
+@import './layouts/dog';

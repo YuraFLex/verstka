@@ -1,0 +1,11 @@
+.dog-category__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.dog-category__link {
+  padding: 40px 20px;
+  background-color: aqua;
+}

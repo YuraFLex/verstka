@@ -1,0 +1,107 @@
+.header {
+  position: relative;
+  font-weight: 500;
+}
+
+.header-top {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: translateY(-60%);
+    background-color: black;
+    width: 100%;
+    height: 1px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  padding: 15px;
+
+  transition: all 250ms linear;
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: 10px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 1px;
+  //   background: teal;
+  // }
+
+  &:hover {
+    color: tomato;
+    scale: 1.05;
+  }
+}
+
+////////////////////////// Navigation //////////////////////////////////
+
+.header-menu {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+
+  // padding: 15px 0;
+}
+
+.nav-list,
+.menu-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.menu-animals {
+  position: relative;
+  cursor: pointer;
+
+  &:hover .submenu-animals__list,
+  &:hover .submenu-animals__list {
+    display: flex;
+  }
+}
+
+.submenu-animals__list {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 300px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: rgba(200, 215, 230, 0.7);
+}
+
+.submenu-animals__item {
+  position: relative;
+
+  &:hover .sub-submenu {
+    display: block;
+  }
+}
+.sub-submenu {
+  display: none;
+  position: absolute;
+  left: -10px;
+  top: 52px;
+  background: rgba(200, 215, 230, 0.7);
+  width: 250px;
+  border-radius: 8px;
+  border-left: 1px solid #212121;
+}
